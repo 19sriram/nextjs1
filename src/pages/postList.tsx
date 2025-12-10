@@ -1,6 +1,6 @@
 'use client';
 
-export const PostListComponent = (props:any)=>{
+const PostListComponent = (props:any)=>{
     const {posts} = props;
     console.log('PostListComponent users:', posts);
     return (
@@ -13,3 +13,4 @@ export const PostListComponent = (props:any)=>{
         </>
     )
 }
+export default PostListComponent;

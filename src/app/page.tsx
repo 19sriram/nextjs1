@@ -1,9 +1,10 @@
-import { ListComponent } from "../pages/userList";
+
 import { PostsWrapper } from "@/components/PostsWrapper";
 import { fetchPosts, fetchData } from "@/actions/posts";
+import ListComponent from "@/pages/userList";
 
 
-export default async function Home() {
+ async function Home() {
   const users = await fetchData();
   const posts = await fetchPosts(10);
 
@@ -22,3 +23,6 @@ export default async function Home() {
     </div>
   );
 }
+
+export default Home;
+

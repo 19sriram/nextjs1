@@ -7,7 +7,7 @@ type ButtonComponentProps = {
     handlePosts: (posts: any) => void;
 };
 
-export const ButtonComponent = ({ handlePosts }: ButtonComponentProps) => {
+const ButtonComponent = ({ handlePosts }: ButtonComponentProps) => {
     const [num, setNum] = useState(10);
     const onButtonclick = async () => {
         const newNum = num + 10;
@@ -26,3 +26,4 @@ export const ButtonComponent = ({ handlePosts }: ButtonComponentProps) => {
         </>
     )
 }
+export default ButtonComponent;

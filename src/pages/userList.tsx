@@ -1,4 +1,4 @@
-export const ListComponent = (props:any)=>{
+ const ListComponent = (props:any)=>{
     const {users} = props;
     console.log('ListComponent users:', users);
     return (
@@ -11,3 +11,4 @@ export const ListComponent = (props:any)=>{
         </>
     )
 }
+export default ListComponent;

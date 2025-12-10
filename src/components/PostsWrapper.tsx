@@ -1,8 +1,10 @@
 'use client';
 
 import { useState } from 'react';
-import { PostListComponent } from '@/pages/postList';
-import { ButtonComponent } from '@/pages/button';
+
+import ButtonComponent from '@/pages/button';
+import PostListComponent from '@/pages/postList';
+
 
 type PostsWrapperProps = {
     initialPosts: any;
