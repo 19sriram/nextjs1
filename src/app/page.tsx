@@ -2,6 +2,7 @@
 import { PostsWrapper } from "@/components/PostsWrapper";
 import { fetchPosts, fetchData } from "@/actions/posts";
 import ListComponent from "@/pages/userList";
+import { WithFetchWrapper } from "@/components/withFetchWrapper";
 
 
  async function Home() {
@@ -19,6 +20,7 @@ import ListComponent from "@/pages/userList";
         <h3>Lists</h3>
         <ListComponent users={users} />
         <PostsWrapper initialPosts={posts} />
+        <WithFetchWrapper/>
       </main>
     </div>
   );
